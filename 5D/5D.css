@@ -1,0 +1,101 @@
+button {
+  border-radius: 8px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 20%;
+  font-size: 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.move1{
+  -webkit-animation:move 14s infinite;
+  background-color:red;
+
+}
+.move2{
+  -webkit-animation:move 50s infinite;
+    background-color:orange;
+}
+.move3{
+  -webkit-animation:move 67s infinite;
+    background-color:yellow;
+}
+.move4{
+  -webkit-animation:move 20s infinite;
+    background-color:green;
+}
+.move5{
+  -webkit-animation:move 88s infinite;
+    background-color:blue;
+}
+.move6{
+  -webkit-animation:move 30s infinite;
+    background-color:lightblue;
+}
+.move7{
+  -webkit-animation:move 19s infinite;
+    background-color:purple;
+}
+
+
+
+/*@-webkit-keyframes move {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}
+
+ Standard syntax 
+@keyframes move {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
+}*/
+
+@keyframes move{
+  from{transform: translateX(0%);}
+  to{transform: translateX(400%);}
+
+}
+
+button:hover{
+	background-color: grey; /* Green */
+	color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	padding-bottom: : 25px;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}

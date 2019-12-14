@@ -1,0 +1,40 @@
+
+.videostart
+{
+    height: 50px;
+    width: 50px;
+    position: center;
+}
+
+.heading
+{
+    text-align: center;
+    font-family: Futura;
+    background-color: black;
+    color: white;
+}
+
+.heading span
+{
+    display: inline-block;
+    animation: animate 3.5s linear forwards;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+.video
+{
+    width: fit-content;
+    height: fit-content;
+}
